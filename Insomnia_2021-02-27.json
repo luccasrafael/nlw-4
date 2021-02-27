@@ -1,0 +1,224 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2021-02-27T13:45:39.977Z",
+    "__export_source": "insomnia.desktop.app:v2020.5.2",
+    "resources": [{
+        "_id": "req_79a4cd798d5342c9a7944fad00009b38",
+        "parentId": "fld_74b0c4197174444b99483d38870ea8ed",
+        "modified": 1614427869628,
+        "created": 1614427834703,
+        "url": "{{ _.baseURL }}/nps/bd1654e7-774e-4759-8b4c-a37bea8ad343",
+        "name": "calculate",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [],
+        "authentication": {},
+        "metaSortKey": -1614427834703,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+    }, {
+        "_id": "fld_74b0c4197174444b99483d38870ea8ed",
+        "parentId": "wrk_a139d0597c30454c92d8476b06452db7",
+        "modified": 1614427815910,
+        "created": 1614427815910,
+        "name": "NPS",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1614427815910,
+        "_type": "request_group"
+    }, {
+        "_id": "wrk_a139d0597c30454c92d8476b06452db7",
+        "parentId": null,
+        "modified": 1614189958859,
+        "created": 1614189958859,
+        "name": "NLW4",
+        "description": "",
+        "scope": null,
+        "_type": "workspace"
+    }, {
+        "_id": "req_0ce923b4d59b49cd95f5d46c440b4ca4",
+        "parentId": "fld_1eb3936ebd4540f0a85e2b9038dabd2a",
+        "modified": 1614362027445,
+        "created": 1614361842152,
+        "url": "{{ _.baseURL }}/sendMail",
+        "name": "send",
+        "description": "",
+        "method": "POST",
+        "body": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"email\": \"luccas@gmail.com\",\n\t\"survey_id\": \"bd1654e7-774e-4759-8b4c-a37bea8ad343\"\n}"
+        },
+        "parameters": [],
+        "headers": [{
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_aad929dab7094661a204da9770899f3a"
+        }],
+        "authentication": {},
+        "metaSortKey": -1614361842152,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+    }, {
+        "_id": "fld_1eb3936ebd4540f0a85e2b9038dabd2a",
+        "parentId": "wrk_a139d0597c30454c92d8476b06452db7",
+        "modified": 1614361826303,
+        "created": 1614361826303,
+        "name": "SendMail",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1614361826303,
+        "_type": "request_group"
+    }, {
+        "_id": "req_52e3a2910dc24f889858d632988a7c7a",
+        "parentId": "fld_f0a4c7555d9a442d999f2065ac1db90b",
+        "modified": 1614205088437,
+        "created": 1614205078410,
+        "url": "{{ baseURL }}/surveys",
+        "name": "show",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [],
+        "authentication": {},
+        "metaSortKey": -1614205078410,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+    }, {
+        "_id": "fld_f0a4c7555d9a442d999f2065ac1db90b",
+        "parentId": "wrk_a139d0597c30454c92d8476b06452db7",
+        "modified": 1614205070108,
+        "created": 1614204659369,
+        "name": "Surveys",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1614204678292,
+        "_type": "request_group"
+    }, {
+        "_id": "req_5d546e088acc47b3a0a5c61dbd4986de",
+        "parentId": "fld_f0a4c7555d9a442d999f2065ac1db90b",
+        "modified": 1614204883865,
+        "created": 1614204637980,
+        "url": "{{ baseURL }}/surveys",
+        "name": "create",
+        "description": "",
+        "method": "POST",
+        "body": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"title\": \"Meu titulo\",\n\t\"description\": \"Minha descricao\"\n}"
+        },
+        "parameters": [],
+        "headers": [{
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_a2ffe5f4fe174048859250ae6a1d752d"
+        }],
+        "authentication": {},
+        "metaSortKey": -1614204637980,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+    }, {
+        "_id": "req_fb86400be2f1451ea8094a0ea5246749",
+        "parentId": "fld_48c66a51723c4834939f248329831eb0",
+        "modified": 1614428985286,
+        "created": 1614204606897,
+        "url": "{{ baseURL }}/users",
+        "name": "create",
+        "description": "",
+        "method": "POST",
+        "body": {
+            "mimeType": "application/json",
+            "text": "{\n\t\"name\": \"Luccas Rafael Martins Pinto\",\n\t\"email\": \"luccas.rafael@gmail.com\"\n}"
+        },
+        "parameters": [],
+        "headers": [{
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_0433b1364ce445fabefdf9fab1a9ea45"
+        }],
+        "authentication": {},
+        "metaSortKey": -1614204606897,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+    }, {
+        "_id": "fld_48c66a51723c4834939f248329831eb0",
+        "parentId": "wrk_a139d0597c30454c92d8476b06452db7",
+        "modified": 1614204678242,
+        "created": 1614204678242,
+        "name": "Users",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1614204678242,
+        "_type": "request_group"
+    }, {
+        "_id": "env_eb062eee33fc7d6d7468c7a1830e1e5b3a1b3db7",
+        "parentId": "wrk_a139d0597c30454c92d8476b06452db7",
+        "modified": 1614190016656,
+        "created": 1614189958907,
+        "name": "Base Environment",
+        "data": {
+            "baseURL": "http://localhost:3333"
+        },
+        "dataPropertyOrder": {
+            "&": ["baseURL"]
+        },
+        "color": null,
+        "isPrivate": false,
+        "metaSortKey": 1614189958907,
+        "_type": "environment"
+    }, {
+        "_id": "jar_eb062eee33fc7d6d7468c7a1830e1e5b3a1b3db7",
+        "parentId": "wrk_a139d0597c30454c92d8476b06452db7",
+        "modified": 1614189958910,
+        "created": 1614189958910,
+        "name": "Default Jar",
+        "cookies": [],
+        "_type": "cookie_jar"
+    }, {
+        "_id": "spc_d151fc0ac65c474f905bcb6e64b80e20",
+        "parentId": "wrk_a139d0597c30454c92d8476b06452db7",
+        "modified": 1614189958864,
+        "created": 1614189958864,
+        "fileName": "NLW4",
+        "contents": "",
+        "contentType": "yaml",
+        "_type": "api_spec"
+    }]
+}
